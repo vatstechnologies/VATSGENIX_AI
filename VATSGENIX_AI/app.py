@@ -1,6 +1,7 @@
 import os
 import streamlit as st
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")  # No need for .env
 import google.generativeai as gen_ai
 
 # Load environment variables from .env file
